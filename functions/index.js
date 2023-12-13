@@ -22,7 +22,7 @@ const app = express();
 
 // Manejar solicitudes y servir index.php
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.php");
+  res.redirect("https://bdventas-1807e.web.app/index.php");
 });
 
 // Configurar la función HTTP
