@@ -7,8 +7,8 @@
  * See a full list of supported triggers at https://firebase.google.com/docs/functions
  */
 
-const functions = require('firebase-functions');
-const express = require('express');
+const functions = require("firebase-functions");
+const express = require("express");
 const app = express();
 
 // Create and deploy your first functions
@@ -21,9 +21,9 @@ const app = express();
 
 
 // Manejar solicitudes y servir index.php
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.php');
-  });
-  
-  // Configurar la función HTTP
-  exports.app = functions.https.onRequest(app);
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.php");
+});
+
+// Configurar la función HTTP
+exports.app = functions.https.onRequest(app);
