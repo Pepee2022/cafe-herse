@@ -36,6 +36,7 @@ $resultProductos = $conn->query($sqlProductos);
 $sqlCategorias = "SELECT * FROM categorias";
 $resultCategorias = $conn->query($sqlCategorias);
 
+
 // Cerrar la conexión (importante cerrarla cuando ya no la necesites)
 $conn->close();
 ?>
